@@ -71,3 +71,35 @@ body > header > nav > .container-fluid > .container-fluid > div:nth-child(1):hov
 body > header > nav > .container-fluid > .container-fluid > div:nth-child(2):hover i { 
     color: green;
 }
+
+
+.myCard{
+    width: 100%;
+    height: 270px;
+    background: #F9CF51;
+    border-radius: 10px;
+}
+
+.myCard>i{
+    color: black;
+    font-size: 4em;
+    text-align: center;
+    display: block;
+    padding-top: 35px;
+}
+
+.myCard>h1{
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    font-family: Ubuntu;
+    padding-top: 20px;
+}
+
+.myCard>h2{
+    color: black;
+    font-size: 3em;
+    text-align: center;
+    font-family: Ubuntu;
+    padding-top: 2px;
+}
