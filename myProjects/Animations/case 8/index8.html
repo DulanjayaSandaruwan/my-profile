@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <style>
+        section{
+            position: relative;
+            background-color: rgb(207, 201, 201);
+            width: 100vw;
+            height: 100vh;
+        }
+        @keyframes anime {
+            0%{
+                margin-top: 25px;
+                margin-left: 10px;
+                transform: rotate(360deg);
+            }
+            25%{
+                margin-top: 25px;
+                margin-left: 1200px;
+                background-color: red;
+            }
+
+            50%{
+                margin-top: 500px;
+                margin-left: 1200px;
+                background-color: yellow;
+            }
+
+            75%{
+                margin-top: 500px;
+                margin-left: 10px;
+                background-color: green;
+            }
+            100%{
+                margin-top: 25px;
+                margin-left: 10px;
+            }
+        }
+        section > div{
+            position: absolute;
+            top: 0;
+            left: 2px;
+            width: 150px;
+            height: 80px;
+            margin: auto;
+            border-radius: 15px;
+            background-color: blue;
+            animation-name: anime;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+    </section>
+</body>
+</html>

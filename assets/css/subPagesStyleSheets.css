@@ -1,0 +1,295 @@
+.MoreAssignment {
+    position: relative;
+    width: 100%;
+    height: 255vh;
+}
+
+.MoreAssignment > img:nth-child(1) {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    filter: opacity(200%);
+}
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    top: 27px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.box > .card {
+    height: 300px;
+    width: 250px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transition: all 0.1s;
+    transform: scale(1.08);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card .fas {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #E67E22;
+}
+
+h5 {
+    color: #F1C40F;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .buttonReadMore{
+    background-color: #E67E22;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card .buttonReadMore:hover {
+    background-color: transparent;
+    border: 2px solid #E67E22;
+    cursor: pointer;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    top: 402px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.box2 > .card2 {
+    height: 300px;
+    width: 250px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.card2:hover {
+    transition: all 0.1s;
+    transform: scale(1.08);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card2 i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #E67E22;
+}
+
+h5 {
+    color: #F1C40F;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card2 .buttonReadMore {
+    background-color: #E67E22;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card2 .buttonReadMore:hover {
+    background-color: transparent;
+    border: 2px solid #E67E22;
+    cursor: pointer;
+}
+
+.box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    top: 777px;
+    left: -6px;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.box3 > .card3 {
+    height: 300px;
+    width: 250px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.card3:hover {
+    transition: all 0.1s;
+    transform: scale(1.08);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card3 i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #E67E22;
+}
+
+h5 {
+    color: #F1C40F;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card3 .buttonReadMore {
+    background-color: #E67E22;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card3 .buttonReadMore:hover {
+    background-color: transparent;
+    border: 2px solid #E67E22;
+    cursor: pointer;
+}
+
+.box4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    top: 1155px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.box4 > .card4 {
+    height: 300px;
+    width: 250px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.card4:hover {
+    transition: all 0.1s;
+    transform: scale(1.08);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card4 i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #E67E22;
+}
+
+h5 {
+    color: #F1C40F;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card4 .buttonReadMore {
+    background-color: #E67E22;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card4 .buttonReadMore:hover {
+    background-color: transparent;
+    border: 2px solid #E67E22;
+    cursor: pointer;
+}

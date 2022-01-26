@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+
+
+    <style>
+        body > main > section{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: #77859d;
+            overflow: hidden;
+        }
+
+        @-webkit-keyframes boxShadowGlimpse{
+            0% { box-shadow:0 0 8px #ffffff, inset 0 0 8px rgb(255, 255, 255); }
+            50% { box-shadow:0 0 16px #fffdf9, inset 0 0 14px rgb(255, 255, 255); }
+            100% { box-shadow:0 0 8px #ffffff, inset 0 0 8px #ffffff; }
+        }
+        body > main > section > div{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: rgb(75, 74, 74);
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            -webkit-animation: boxShadowGlimpse 2s linear 1s infinite;
+            
+        }
+        body > main > section > div::after{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            content: "";
+            border: 20px solid #77859d;
+            border-top: 20px solid #ff025f;
+            transition: all 0.5s;
+            border-radius: 50%;
+        }
+        body > main > section > div >h1{
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: max-content;
+            height: max-content;
+            color: white;
+            font-size: 30px;
+            font-family: Ubuntu;
+            z-index: 3;
+        }
+        body > main > section > div:hover::after{
+            border-top: 20px solid red;
+            transform: rotate(360deg);
+            transition: all 0.5s;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div>
+                <h1>RWAD</h1>
+            </div>    
+        </section>
+    </main>
+</body>
+</html>

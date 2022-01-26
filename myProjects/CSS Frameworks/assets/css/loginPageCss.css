@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&display=swap');
+
+html, body {
+    font-family: 'Poppins', serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    background: white;
+    border-radius: 30px;
+    box-shadow: 12px 12px 22px;
+}
+
+.login img {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.login h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Pacifico', serif;
+    color: #316B83;
+}
+
+.input {
+    height: 50px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    -webkit-box-shadow: -1px 1px 30px -11px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 30px -11px rgba(0,0,0,0.75);
+}
+
+.btnLogIn {
+    height: 40px;
+    width: 20%;
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    font-weight: 600;
+    background-color: #FF415B;
+    color: white;
+}
+
+.btnLogIn:hover {
+    background-color: transparent;
+    border: 2px solid #FF415B;
+    color: black;
+}
+
+
+
+
+
+
+
+
+

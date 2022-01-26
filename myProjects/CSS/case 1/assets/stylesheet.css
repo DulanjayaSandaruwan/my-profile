@@ -1,0 +1,218 @@
+body > :nth-child(1){
+    background-color: red;
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+}
+body > :nth-child(1) > div{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+body > :nth-child(1) > div > div{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+body > :nth-child(2){
+    background-color: green;
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    right: 0;
+}
+body > :nth-child(2) > div{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+body > :nth-child(2) > div > div{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+body > :nth-child(3){
+    background-color: yellow;
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    left: 0;
+    bottom: 0%;
+}
+body > :nth-child(3) > div{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+body > :nth-child(3) > div > div{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+body > :nth-child(4){
+    background-color: purple;
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    right: 0;
+    bottom: 0;
+}
+body > :nth-child(4) > div{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+body > :nth-child(4) > div > div{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+body > div:nth-child(5){
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-bottom-right-radius: 100%;
+    left: 0;
+}
+body > div:nth-child(6){
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-bottom-left-radius: 100%;
+    right: 0;
+}
+body > div:nth-child(7){
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-top-right-radius: 100%;
+    bottom: 0;
+    left: 0;
+}
+body > div:nth-child(8){
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-top-left-radius: 100%;
+    bottom: 0;
+    right: 0;
+}
+
+body > div:nth-child(9){
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    z-index: 2;
+    background-color: white;
+}
+
+body > div:nth-child(9) > div{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: red;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+body > div:nth-child(10){
+    position: absolute;
+    width: 150px;
+    height: 75px;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background-color: white;
+    border-bottom-left-radius: 108px;
+    border-bottom-right-radius: 108px;
+}
+body > div:nth-child(11){
+    position: absolute;
+    width: 150px;
+    height: 75px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: white;
+    border-bottom-left-radius: 108px;
+    border-bottom-right-radius: 108px;
+    transform: rotate(180deg);
+}

@@ -1,0 +1,95 @@
+body > main{
+    position: relative;
+    background-color: rgb(229, 233, 232);
+    width: 100vw;
+    height: 100vh;
+}
+body > main > .outerCircle{
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    border:10px solid rgb(124, 102, 81);
+    border-radius: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: rgb(229, 233, 232);
+    z-index: 1;
+}
+body > main > .outerCircle > .innerCircle{
+    position: fixed;
+    width: 380px;
+    height: 380px;
+    border:10px solid red;
+    border-radius: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: rgb(229, 233, 232);
+    z-index: 1;
+}
+body > main > section:nth-child(2),section:nth-child(3),section:nth-child(4){
+    position: relative;
+    background-color: rgb(229, 233, 232);
+    width: 100vw;
+    height: 100vh;
+}
+
+body > main > section:nth-child(2) >.HelloCircle{
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border-radius: 100%;
+    top: -18px;
+    bottom: 0;
+    right: 0;
+    left: -15.8px;
+    margin: auto;
+    background: rgb(115, 45, 129);
+    z-index: 4;
+    
+}
+p{
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 40%;
+    text-align: center;
+}
+body > main > section:nth-child(3) > .WelcomeToCircle{
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    border:10px solid transparent;
+    border-radius: 100%;
+    top: -18px;
+    bottom: 0;
+    right: 0;
+    left: -15.8px;
+    margin: auto;
+    background: rgb(54, 161, 204);
+    z-index: 2;
+}
+body > main > section:nth-child(4) > .InstituteOfSoftwareEngineeringCircle{
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    border:10px solid transparent;
+    border-radius: 100%;
+    top: 17px;
+    bottom: 0;
+    right: 0;
+    left: -15.8px;
+    margin: auto;
+    background: rgb(228, 129, 113);
+    z-index: 2;
+}

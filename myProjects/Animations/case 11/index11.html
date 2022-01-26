@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Car Animation</title>
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <style>
+        section{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        section > .backgroundImg{
+            width: 100%;
+            height: 100%;
+            background: url(assets/sky.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        @keyframes roadCityAnim{
+            0%{
+                left: 0;
+            }
+            75%{
+                left: -173%;
+            }
+            76%{
+                left: -174%;
+            }
+            80%{
+                left: -175%;
+            }
+            85%,100%{
+                left: -175%;
+            }
+        }
+
+        @keyframes wheelsAnim{
+            0%{
+                transform: rotate(0deg);
+            }
+            75%{
+                transform: rotate(360deg);
+            }
+            76%{
+                transform: rotate(350deg);
+            }
+            80%{
+                transform: rotate(340deg);
+            }
+            85%,100%{
+                transform: rotate(340deg);
+            }
+        }
+        section > .container1{
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            width: 400%;
+            height: 400px;
+            animation-name: roadCityAnim;
+            animation-duration: 8s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            overflow-x: hidden;
+        }
+        section > .container1 > .city1{
+            position: absolute;
+            background: url(assets/city.png);
+            width: calc(100%/3);
+            height: calc(100%/2);
+            background-position: center;
+            background-size: cover;
+        }
+        section > .container1 > .city2{
+            position: absolute;
+            background: url(assets/city.png);
+            width: calc(100%/3);
+            height: calc(100%/2);
+            left: calc(100%/3*1);
+            background-position: center;
+            background-size: cover;
+        }
+        section > .container1 > .city3{
+            position: absolute;
+            background: url(assets/city.png);
+            width: calc(100%/3);
+            height: calc(100%/2);
+            left: calc(100%/3*2);
+            background-position: center;
+            background-size: cover;
+        }
+        section > .container1 > .road1{
+            position: absolute;
+            bottom: 0px;
+            background: url(assets/road.jpg);
+            width: calc(100%/3);
+            height: calc(100%/2);
+            background-position: center;
+            background-size: cover;
+        }
+        section > .container1 > .road2{
+            position: absolute;
+            bottom: 0px;
+            background: url(assets/road.jpg);
+            width: calc(100%/3);
+            height: calc(100%/2);
+            left: calc(100%/3*1);
+            background-position: center;
+            background-size: cover;
+        }
+        section > .container1 > .road3{
+            position: absolute;
+            bottom: 0px;
+            background: url(assets/road.jpg);
+            width: calc(100%/3);
+            height: calc(100%/2);
+            left: calc(100%/3*2);
+            background-position: center;
+            background-size: cover;
+        }
+        section > .car{
+            position: absolute;
+            top: 250px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background: url(assets/car.png);
+            width: 250px;
+            height: 100px;
+            background-position: center;
+            background-size: cover;
+        }
+        section > .wheel1{
+            position: absolute;
+            top: 300px;
+            bottom: 0;
+            left: -160px;
+            right: 0;
+            margin: auto;
+            background: url(assets/wheel.png);
+            width: 50px;
+            height: 50px;
+            background-position: center;
+            background-size: cover;
+            animation-name: wheelsAnim;
+            animation-duration: 8s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            overflow-x: hidden;
+        }
+        section > .wheel2{
+            position: absolute;
+            top: 300px;
+            bottom: 0;
+            left: 148px;
+            right: 0;
+            margin: auto;
+            background: url(assets/wheel.png);
+            width: 50px;
+            height: 50px;
+            background-position: center;
+            background-size: cover;
+            animation-name: wheelsAnim;
+            animation-duration: 8s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="backgroundImg"></div>
+            <div class="container1">
+                <div class="city1"></div>
+                <div class="city2"></div>
+                <div class="city3"></div>
+                <div class="city4"></div>
+
+                <div class="road1"></div>
+                <div class="road2"></div>
+                <div class="road3"></div>
+            </div>
+            
+            <div class="car"></div>
+            <div class="wheel1"></div>
+            <div class="wheel2"></div>
+        </section>
+    </main>
+</body>
+</html>

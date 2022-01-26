@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Food Hut</title>
+
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../assets/css/myStyles.css" rel="stylesheet">
+    <link href="../assets/css/normalize.css" rel="stylesheet">
+    <link href="../assets/fontawesome-free-6.0.0-beta3-web/css/all.css" rel="stylesheet">
+
+</head>
+
+<body class="overflow-hidden">
+
+<header>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+        <div class="container-fluid">
+
+            <h3 class="navbar-brand text-white fs-4" href="#" style="margin-left: 20px;height: 30px;">Food Hut</h3>
+
+            <div class="collapse navbar-collapse" id="navbarText">
+
+                <ul class="navbar-nav m-lg-auto mb-2 mb-lg-0" style="left:200px;">
+                    <li class="nav-item"><a class="nav-link text-white" href="#"><span>Home</span></a></li>
+                    <li class="nav-item"><a class="nav-link text-white"
+                                            href="../subPages/orders.html"><span>Orders</span></a></li>
+                    <li class="nav-item"><a class="nav-link text-white"
+                                            href="../subPages/item.html"><span>Items</span></a></li>
+                    <li class="nav-item"><a class="nav-link text-white"
+                                            href="../subPages/customer.html"><span>Customers</span></a></li>
+                </ul>
+
+            </div>
+
+            <div class="container-fluid position-absolute end-0"
+                 style="position: absolute; width: 200px ; height: 50px;">
+
+                <div class="btnLogOut"
+                     style="color: #ffffff; width: 40px; height: 100%; font-size: 25px; right: 0; position: absolute; top: 0; bottom: 0; margin: auto; cursor: pointer;">
+                    <i class="fas fa-sign-out-alt"
+                       style="position: absolute; height: max-content; top: 0; bottom: 0; margin: auto;"></i>
+                </div>
+
+                <div class="btnSignUp"
+                     style="color: #ffffff; width: 40px; height: 100%; font-size: 25px; right: 60px; position: absolute; top: 0; bottom: 0; margin: auto; cursor: pointer;">
+                    <i class="fas fa-user-plus"
+                       style="position: absolute; height: max-content; top: 0; bottom: 0; margin: auto;"></i>
+                </div>
+
+            </div>
+
+            <button aria-controls="offcanvasNavbar" class="navbar-toggler" data-bs-target="#offcanvasNavbar"
+                    data-bs-toggle="offcanvas" type="button">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+
+        </div>
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="Home container-fluid position-relative">
+
+        <div class="container-fluid position-absolute shadow">
+
+            <div class="row h-100 position-relative start-0 end-0 m-auto" style="width: 100%;top: 10px;">
+
+                <div class="col-4 col bg-light shadow">
+
+                    <div class="row position-relative" style="height: 40px; background-color: #F1C40F;">
+                        <h3 class="fs-6 text-black top-0 bottom-0 m-auto "
+                            style="text-align: center;">Invoice Details</h3>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col">
+
+                            <div class="form position-relative" style="top: 10px;">
+                                <input class="form-control bg-transparent" id="floatingId" placeholder="Order Id"
+                                       type="text">
+                            </div>
+
+                        </div>
+
+                        <div class="col">
+
+                            <div class="form-group" style="top: 10px;">
+                                <label class="col-md-3 control-label" for="textInput">OrderDate</label>
+                                <div class="col-md-4 m-lg-auto" style="width: 100%;">
+                                    <input class="form-control input-md bg-transparent" id="textInput" name="textInput"
+                                           placeholder="placeholder" type="date">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col">
+
+                            <div class="form-floating position-relative" style="top: 20px;">
+                                <select aria-label="Floating label select example" class="form-select bg-transparent"
+                                        id="floatingSelect" style="height: 40px; width: 100%;">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">C001</option>
+                                    <option value="2">C002</option>
+                                    <option value="3">C003</option>
+                                </select>
+
+                                <label for="floatingSelect">Customer ID</label>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col">
+
+                            <div class="form-floating position-relative" style="top: 20px;">
+                                <input class="form-control bg-transparent" id="floatingPassword" placeholder="Name"
+                                       style="height: 40px;"
+                                       type="text">
+                                <label for="floatingPassword"><span>Name</span></label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-floating position-relative" style="top: 40px;">
+                        <input class="form-control bg-transparent" id="floatingPassword" placeholder="Address"
+                               style="height: 40px;" type="text">
+                        <label for="floatingPassword"><span>Address</span></label>
+                    </div>
+
+                    <div class="form-floating position-relative" style="top: 60px;">
+                        <input class="form-control bg-transparent" id="floatingPassword" placeholder="Tel"
+                               style="height: 40px;"
+                               type="tel">
+                        <label for="floatingPassword"><span>E-Mail</span></label>
+                    </div>
+
+                    <div class="form-floating position-relative" style="top: 80px;">
+                        <input class="form-control bg-transparent" id="floatingPassword" placeholder="Address"
+                               style="height: 40px;" type="text">
+                        <label for="floatingPassword"><span>Contact Number</span></label>
+                    </div>
+
+                </div>
+
+                <div class="col-5 bg-light mx-4 shadow">
+
+                    <div class="row position-relative" style="height: 40px; background-color: #FF415B;">
+                        <h3 class="fs-6 text-white top-0 bottom-0 m-auto "
+                            style="text-align: center;">Item Select</h3>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col">
+
+                            <div class="form-floating position-relative" style="top: 10px;">
+                                <select aria-label="Floating label select example" class="form-select bg-transparent"
+                                        id="floatingSelect" style="height: 40px; width: 100%;">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">I001</option>
+                                    <option value="2">I002</option>
+                                    <option value="3">I003</option>
+                                </select>
+
+                                <label for="floatingSelect">Item Code</label>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col">
+
+                            <div class="form-floating position-relative" style="top: 10px;">
+                                <input class="form-control bg-transparent" id="floatingPassword" placeholder="Name"
+                                       style="height: 40px;"
+                                       type="text">
+                                <label for="floatingPassword"><span>Item Name</span></label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col">
+
+                            <div class="form-floating position-relative" style="top: 40px;">
+                                <input class="form-control bg-transparent" id="floatingPassword" placeholder="Address"
+                                       style="height: 40px;" type="text">
+                                <label for="floatingPassword"><span>Price</span></label>
+                            </div>
+
+                        </div>
+
+                        <div class="col">
+
+                            <div class="form-floating position-relative" style="top: 40px;">
+                                <input class="form-control bg-transparent" id="floatingPassword" placeholder="Name"
+                                       style="height: 40px;"
+                                       type="text">
+                                <label for="floatingPassword"><span>Qty On Hand</span></label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-floating position-relative" style="top: 80px;">
+                        <input class="form-control bg-transparent" id="floatingPassword" placeholder="Address"
+                               style="height: 40px;" type="text">
+                        <label for="floatingPassword"><span>Order Quantity</span></label>
+                    </div>
+
+                    <div class="container-fluid position-absolute" style="left: 525px;right: 0;margin: auto;
+                    width: 135px;bottom: 275px;">
+                        <button class="btn btn-outline-danger btn-md position-absolute start-0" style="width: 100%;">
+                            Add To Cart
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="col bg-light shadow position-relative">
+
+                    <div class="form-floating mb-3" style="top: 10px;">
+                        <input class="form-control" id="floatingInput" placeholder="name@example.com" style="height: 40px;"
+                               type="email" type="text">
+                        <label for="floatingInput">Total</label>
+                    </div>
+
+                    <div class="form-floating mb-3" style="top: 10px;">
+                        <input class="form-control" id="floatingInput" placeholder="name@example.com" style="height: 40px;"
+                               type="email" type="text">
+                        <label for="floatingInput">Sub Total</label>
+                    </div>
+
+                    <div class="form-floating mb-3" style="top: 10px;">
+                        <input class="form-control" id="floatingInput" placeholder="name@example.com" style="height: 40px;"
+                               type="email" type="text">
+                        <label for="floatingInput">Cash</label>
+                    </div>
+
+                    <div class="form-floating mb-3" style="top: 10px;">
+                        <input class="form-control" id="floatingInput" placeholder="name@example.com" style="height: 40px;"
+                               type="email" type="text">
+                        <label for="floatingInput">Discount</label>
+                    </div>
+
+                    <div class="form-floating mb-3" style="top: 10px;">
+                        <input class="form-control" id="floatingInput" placeholder="name@example.com" style="height: 40px;"
+                               type="email" type="text">
+                        <label for="floatingInput">Balance</label>
+                    </div>
+
+                    <div class="container-fluid position-absolute" style="left: 0;right: 0;margin: auto;
+                    width: 135px;bottom: 55px;">
+                        <button class="btn btn-outline-success btn-md position-absolute start-0" style="width: 100%;">
+                            Purchase
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="row position-relative start-0 end-0 m-auto" style="width: 100%; height: 20%;">
+
+                    <div class="col bg-light">
+
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th scope="col">Customer Id</th>
+                                <th scope="col">Item Code</th>
+                                <th scope="col">Item Description</th>
+                                <th scope="col">Item Qty</th>
+                                <th scope="col">Item Price</th>
+                                <th scope="col">Item Discount</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                            </thead>
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

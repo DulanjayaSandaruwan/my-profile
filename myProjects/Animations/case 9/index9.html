@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <style>
+        section{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(212, 211, 211);
+        }
+        @keyframes waterDropAnim {
+            0%{
+                width: 50px;
+                height: 50px;
+                opacity: 100%;
+            }
+            100%{
+                width: 300px;
+                height: 300px;
+                opacity: 20%;
+            }
+        }
+        section > div{
+            position: absolute;    
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            border: 1px solid red;
+            border-radius: 50%;
+            -webkit-animation-name: waterDropAnim;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-duration: 1.5s;
+            -webkit-animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div></div>
+        </section>
+    </main>
+</body>
+</html>

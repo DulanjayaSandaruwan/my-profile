@@ -1,0 +1,2235 @@
+/*-----------------------------Header Start----------------------------*/
+body> header {
+position: relative;
+}
+
+body > header div:nth-child(1) {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 40px;
+    background-color: #373d41;
+}
+
+body > header > div > nav {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-left: 36%;
+    margin-top: -5px;
+}
+
+body > header > div > nav > ul > li {
+    position: relative;
+    display: inline-block;
+}
+
+body > header > div > nav > ul > li > a:hover{
+    color: yellow;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+body > header > div > nav > ul > li > a {
+    position: relative;
+    display: inline-block;
+    text-align: right;
+    list-style: none;
+    text-decoration: none;
+    color: #eeeeee;
+    padding-right: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header .mobileNavBar {
+    display: none;
+}
+
+body > header div:nth-child(2) {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 10px;
+}
+
+.ml11 {
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.ml11 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+}
+
+.ml7 {
+    position: relative;
+    font-weight: 900;
+    font-size: 1.7em;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.ml7 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.ml7 .letter {
+    transform-origin: 0 100%;
+    display: inline-block;
+    line-height: 1em;
+    color: #E67E22;
+    top: 0;
+}
+
+/*-----------------------------Header End----------------------------*/
+
+/*-----------------------------Home Start----------------------------*/
+
+body > main > .Home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+body > main > .Home > img {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+body > main > .Home > h1:nth-child(2) {
+    position: absolute;
+    color: #E67E22;
+    font-size: 50px;
+    font-family: 'Acme', sans-serif;
+    top: 40px;
+    left: 705px;
+}
+
+.Home > p {
+    color: #fff;
+    top: 80px;
+    left: 705px;
+    position: absolute;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.Home > .nameText {
+    color: #fff;
+    top: 70px;
+    left: 705px;
+    position: absolute;
+}
+
+.Home > .nameText h1 {
+    font-size: 120px;
+    line-height: 160px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(../images/back1.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+body > main > .Home > h1:nth-child(5) {
+    position: absolute;
+    color: #E67E22;
+    font-size: 40px;
+    font-family: Ubuntu;
+    top: 290px;
+    left: 780px;
+}
+
+body > main > .Home > h3 {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top: 296px;
+    left: 960px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body > main > div {
+    position: fixed;
+    width: 135px;
+    height: 45px;
+    border-radius: 30px;
+    right: 30px;
+    bottom: 50px;
+    transform: translateX(0%);
+    z-index: 3;
+}
+
+body > main > div > button {
+    position: relative;
+    width: 100%;
+    height: 68%;
+    background-color: #F1C40F;
+    border-radius: 101px;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+body > main > div > button:hover {
+    background-color: transparent;
+    border: 2px solid #F1C40F;
+    color: #fff;
+    cursor: pointer;
+}
+
+.Home > .wrapper {
+    position: absolute;
+    right: 40px;
+    bottom: 120px;
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height: 60px;
+}
+
+.Home > .wrapper {
+    display: inline-flex;
+}
+
+.Home > .wrapper a .icon {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.Home > .wrapper a .icon:hover i {
+    color: #fff;
+}
+
+.Home > .wrapper a .icon span {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    display: block;
+    background: white;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #E67E22;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Home > .wrapper a .icon:hover span {
+    color: #fff;
+    border-color: white;
+}
+
+.Home > .wrapper a .icon span i {
+    font-size: 20px;
+    line-height: 42px;
+    color: black;
+}
+
+.Home > .wrapper a .icon .tooltip {
+    position: absolute;
+    top: 0px;
+    background: #fff;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.Home > .wrapper a .icon:hover .tooltip {
+    top: -60px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.Home > .wrapper a .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.Home > .wrapper a .icon .tooltip:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.Home > .wrapper a .facebook:hover span,
+.Home > .wrapper a .facebook:hover .tooltip,
+.Home > .wrapper a .facebook:hover .tooltip:before {
+    background: #3B5999;
+}
+
+.Home > .wrapper a .twitter:hover span,
+.Home > .wrapper a .twitter:hover .tooltip,
+.Home > .wrapper a .twitter:hover .tooltip:before {
+    background: #46C1F6;
+}
+
+.Home > .wrapper a .gitHub:hover span,
+.Home > .wrapper a .gitHub:hover .tooltip,
+.Home > .wrapper a .gitHub:hover .tooltip:before {
+    background: #333;
+}
+
+.Home > .wrapper a .linkedIn:hover span,
+.Home > .wrapper a .linkedIn:hover .tooltip,
+.Home > .wrapper a .linkedIn:hover .tooltip:before {
+    background: #003366;
+}
+
+/*-----------------------------Home End----------------------------*/
+
+/*-----------------------------About Me Start----------------------------*/
+
+.AboutMe {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.AboutMe > img:nth-child(1) {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    filter: opacity(200%);
+}
+
+.AboutMe > img:nth-child(2) {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 70px;
+    top: 60px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px 15px 40% 15px;
+    box-shadow: -12px -16px 2px 1px #F46A06;
+}
+
+.AboutMe > div {
+    position: absolute;
+    left: 25px;
+    top: 285px;
+    color: white;
+}
+
+.AboutMe > div > h3 {
+    font-size: 30px;
+}
+
+.AboutMe > div > ul > li {
+    font-size: 19px;
+    font-weight: 600;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.AboutMe .aboutMeTopic {
+    position: absolute;
+    left: 400px;
+    top: 30px;
+    color: white;
+}
+
+.AboutMe .aboutMeTopic > h1 > span {
+    color: #E67E22;
+    font-size: 50px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.AboutMe .myDetails {
+    position: absolute;
+    top: 140px;
+    left: 450px;
+    border: 2px solid gray;
+    border-radius: 0 30px 0 30px;
+}
+
+.AboutMe .myDetails > h3 {
+    font-size: 30px;
+    color: #E67E22;
+    margin-left: 5px;
+    margin-top: -2px;
+}
+
+.AboutMe .myDetails > p {
+    font-size: 25px;
+    color: white;
+    margin-left: 5px;
+    margin-top: -15px;
+}
+
+.AboutMe .btnContainer {
+    position: absolute;
+    left: 890px;
+    top: 350px;
+    width: 320px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.AboutMe .btnContainer > button:nth-child(1) {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    height: 30px;
+    background-color: transparent;
+    color: yellow;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.AboutMe .btnContainer > button:nth-child(2) {
+    position: absolute;
+    right: 0;
+    width: 150px;
+    height: 30px;
+    background-color: transparent;
+    color: yellow;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.AboutMe .btnContainer > button:nth-child(1) > .fas {
+    color: yellow;
+    font-size: 20px;
+}
+
+.AboutMe .btnContainer > button:nth-child(2) > .fas {
+    color: yellow;
+    font-size: 20px;
+}
+
+.AboutMe .lastContainer {
+    position: absolute;
+    left: 550px;
+    top: 400px;
+    color: white;
+}
+
+.AboutMe .lastContainer > h3 {
+    color: #E67E22;
+    font-size: 25px;
+}
+
+/*-----------------------------About Me End----------------------------*/
+
+/*-----------------------------Services Start----------------------------*/
+
+.Services {
+    position: relative;
+    width: 100%;
+    height: 136vh;
+}
+
+.Services > img:nth-child(1) {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    filter: opacity(200%);
+}
+
+.Services > .serviceTopic {
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    color: white;
+}
+
+.Services > .serviceTopic > h1 > span:nth-child(1) {
+    position: relative;
+    left: 10px;
+    top: 8px;
+    color: #E67E22;
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Services > .serviceTopic > h1 > span:nth-child(3) {
+    position: absolute;
+    width: max-content;
+    margin-left: 220px;
+    top: 60px;
+    color: white;
+    font-family: 'Orelega One', cursive;
+    font-size: 28px;
+    font-weight: 3;
+}
+
+.Services > .serviceTopic > h1 > span:nth-child(3) > span {
+    color: #E67E22;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.box > .card {
+    height: 300px;
+    width: 250px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transition: all 0.1s;
+    transform: scale(1.08);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #E67E22;
+}
+
+h5 {
+    color: #F1C40F;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .buttonReadMore{
+    background-color: #E67E22;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card .buttonReadMore:hover {
+    background-color: transparent;
+    border: 2px solid #E67E22;
+    cursor: pointer;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    top: 485px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.box2 > .card2 {
+    height: 300px;
+    width: 250px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.card2:hover {
+    transition: all 0.1s;
+    transform: scale(1.08);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card2 i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #E67E22;
+}
+
+h5 {
+    color: #F1C40F;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card2 .buttonReadMore {
+    background-color: #E67E22;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card2 .buttonReadMore:hover {
+    background-color: transparent;
+    border: 2px solid #E67E22;
+    cursor: pointer;
+}
+
+/*-----------------------------Services End----------------------------*/
+
+/*-----------------------------Skills Start----------------------------*/
+
+.Skills {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.Skills > img:nth-child(1) {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    filter: opacity(200%);
+}
+
+.Skills > .skillTopic {
+    position: absolute;
+    left: 8px;
+    top: 20px;
+    color: white;
+}
+
+.Skills > .skillTopic > h1 > span:nth-child(1) {
+    left: 10px;
+    top: 30px;
+    color: #E67E22;
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Skills > .skillTopic > h1 > span:nth-child(3) {
+    position: absolute;
+    width: max-content;
+    margin-left: 110px;
+    top: 68px;
+    color: white;
+    font-family: 'Orelega One', cursive;
+    font-size: 28px;
+    font-weight: 3;
+}
+
+.Skills > .skillTopic > h1 > span:nth-child(3) > span {
+    color: #E67E22;
+}
+
+.Skills > .exp {
+    position: absolute;
+    left: 700px;
+    top: -1px;
+    color: white;
+}
+
+.Skills > .exp > h1 > span:nth-child(1) {
+    left: 10px;
+    top: 30px;
+    color: #E67E22;
+    font-size: 60px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Skills > .exp > h1 > span:nth-child(2) {
+    font-size: 23px;
+}
+
+.Skills > .completeProjects {
+    position: absolute;
+    left: 850px;
+    top: 50px;
+    color: white;
+}
+
+.Skills > .completeProjects > h1 > span:nth-child(1) {
+    left: 10px;
+    top: 35px;
+    color: #E67E22;
+    font-size: 60px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Skills > .completeProjects > h1 > span:nth-child(2) {
+    font-size: 23px;
+}
+
+.Skills > .customers {
+    position: absolute;
+    left: 1000px;
+    top: 100px;
+    color: white;
+}
+
+.Skills > .customers > h1 > span:nth-child(1) {
+    left: 10px;
+    top: 35px;
+    color: #E67E22;
+    font-size: 60px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Skills > .customers > h1 > span:nth-child(2) {
+    font-size: 23px;
+}
+
+.Skills > .container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 90%;
+    height: 200px;
+    top: 30%;
+    left: 60px;
+}
+
+.Skills > .container > div {
+    width: 152px;
+    height: 75%;
+    border: 1px solid rgba(128, 128, 128, 0.78);
+    box-shadow: 1px 2px 3px rgb(255, 255, 255);
+    border-radius: 0 40% 40% 40%;
+    cursor: pointer;
+}
+
+.Skills > .container > div:hover {
+    border: 1px solid rgba(230, 126, 34, 0.8);
+    box-shadow: 1px 2px 3px rgba(230, 126, 34, 0.78);
+    transform: scale(1.08);
+}
+
+.Skills > .container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Skills > .container > div img {
+    width: 123px;
+}
+
+.Skills > .tools {
+    position: absolute;
+    left: 90px;
+    bottom: 180px;
+    color: #E67E22;
+    font-size: 22px;
+}
+
+.Skills > .toolsContainer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 90%;
+    height: 200px;
+    top: 65%;
+    left: 67px;
+}
+
+.Skills > .toolsContainer > div {
+    width: 115px;
+    height: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.78);
+    box-shadow: 1px 2px 3px rgb(255, 255, 255);
+    border-radius: 0 40% 40% 40%;
+    cursor: pointer;
+}
+
+.Skills > .toolsContainer > div:hover {
+    border: 1px solid rgba(230, 126, 34, 0.8);
+    box-shadow: 1px 2px 3px rgba(230, 126, 34, 0.78);
+    transform: scale(1.08);
+}
+
+.Skills > .toolsContainer > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Skills > .toolsContainer > div img {
+    width: 100px;
+}
+
+.toolsContainer > div:nth-child(1) > img {
+    width: 50px;
+    height: 50px;
+}
+
+.toolsContainer > div:nth-child(3) > img {
+    width: 80px;
+    height: 50px;
+}
+
+.toolsContainer > div:nth-child(4) > img {
+    width: 60px;
+    height: 50px;
+}
+
+.toolsContainer > div:nth-child(5) > img {
+    width: 50px;
+    height: 50px;
+}
+
+/*-----------------------------Skills End----------------------------*/
+
+/*-----------------------------Education Start----------------------------*/
+
+.Education {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.Education > img:nth-child(1) {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    filter: opacity(200%);
+}
+
+.Education > .educationTopic {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+}
+
+.Education > .educationTopic > h1 > span:nth-child(1) {
+    position: absolute;
+    left: 5px;
+    top: 35px;
+    color: #E67E22;
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Education > .educationTopic > h1 > span:nth-child(3) {
+    position: absolute;
+    width: max-content;
+    left: 250px;
+    top: 60px;
+    color: white;
+    font-family: 'Orelega One', cursive;
+    font-size: 28px;
+    font-weight: 3;
+}
+
+.Education > .educationTopic > h1 > span:nth-child(3) > span {
+    position: relative;
+    left: 5px;
+    top: 2px;
+    color: #E67E22;
+}
+
+.Education > .timeline {
+    width: 80%;
+    margin: 20px auto;
+    position: absolute;
+    top: 140px;
+    left: 130px;
+}
+
+.Education > .timeline:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin: 0 0 0 -1px;
+    width: 2px;
+    height: 100%;
+    background: rgba(255,255,255,0.2);
+}
+
+.Education > .timeline article {
+    width: 100%;
+    margin: 0 0 20px 0;
+    position: relative;
+}
+
+.Education > .timeline article:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.Education > .timeline article div.inner {
+    width: 40%;
+    float: left;
+    margin: 5px 0 0 0;
+    border-radius: 6px;
+}
+.Education > .timeline article div.inner span.date {
+    display: block;
+    width: 60px;
+    height: 50px;
+    padding: 5px 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0 0 0 -32px;
+    border-radius: 100%;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: #25303B;
+    color: rgba(255,255,255,0.5);
+    border: 2px solid #E67E22;
+    box-shadow: 0 0 0 7px #25303B;
+}
+
+.Education > .timeline article div.inner span.date span {
+    display: block;
+    text-align: center;
+}
+
+.Education > .timeline article div.inner span.date span.day {
+    font-size: 10px;
+}
+
+.Education > .timeline article div.inner span.date span.month {
+    font-size: 18px;
+}
+
+.Education > .timeline article div.inner span.date span.year {
+    font-size: 10px;
+}
+
+.Education > .timeline article div.inner h2 {
+    padding: 15px;
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+}
+
+.Education > .timeline article div.inner h2:after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    -webkit-transform: rotate(-45deg);
+}
+.Education > .timeline article div.inner p {
+    padding: 15px;
+    margin: 0;
+    font-size: 20px;
+    background: #191919;
+    color: #fff;
+    border-radius: 0 0 6px 6px;
+}
+
+.Education > .timeline article:nth-child(2n+2) div.inner {
+    float: right;
+}
+
+.Education > .timeline article:nth-child(2n+2) div.inner h2:after {
+    left: -5px;
+}
+
+.Education > .timeline article:nth-child(1) div.inner h2 {
+    background: #e67e22;
+}
+
+.Education > .timeline article:nth-child(1) div.inner h2:after {
+    background: #e67e22;
+}
+
+.Education > .timeline article:nth-child(2) div.inner h2 {
+    background: #e67e22;
+}
+
+.Education > .timeline article:nth-child(2) div.inner h2:after {
+    background: #e67e22;
+}
+
+.Education > .timeline article:nth-child(3) div.inner h2 {
+    background: #e67e22;
+}
+
+.Education > .timeline article:nth-child(3) div.inner h2:after {
+    background: #e67e22;
+}
+
+/*-----------------------------Education End----------------------------*/
+
+/*-----------------------------Projects Start----------------------------*/
+
+.Projects {
+    position: relative;
+    width: 100%;
+    height: 136vh;
+}
+
+.Projects > img:nth-child(1) {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    filter: opacity(200%);
+}
+
+.Projects > .projectTopic {
+    position: absolute;
+    left: 8px;
+    top: 20px;
+    color: white;
+}
+
+.Projects > .projectTopic > h1 > span:nth-child(1) {
+    left: 10px;
+    top: 30px;
+    color: #E67E22;
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Projects > .projectTopic > h1 > span:nth-child(3) {
+    position: absolute;
+    width: max-content;
+    margin-left: 150px;
+    top: 68px;
+    color: white;
+    font-size: 20px;
+}
+
+.Projects > .projectTopic > h1 > span:nth-child(3) > span {
+    position: relative;
+    left: 595px;
+    top: -24px;
+    color: #E67E22;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.box > .card {
+    height: 300px;
+    width: 250px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transition: all 0.1s;
+    transform: scale(1.08);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #E67E22;
+}
+
+h5 {
+    color: #F1C40F;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .buttonReadMore{
+    background-color: #E67E22;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card .buttonReadMore:hover {
+    background-color: transparent;
+    border: 2px solid #E67E22;
+    cursor: pointer;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    top: 485px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.box2 > .card2 {
+    height: 300px;
+    width: 250px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.card2:hover {
+    transition: all 0.1s;
+    transform: scale(1.08);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card2 i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #E67E22;
+}
+
+h5 {
+    color: #F1C40F;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card2 .buttonReadMore {
+    background-color: #E67E22;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card2 .buttonReadMore:hover {
+    background-color: transparent;
+    border: 2px solid #E67E22;
+    cursor: pointer;
+}
+/*-----------------------------Projects End----------------------------*/
+
+/*-----------------------------Assignment Start----------------------------*/
+
+.Assignments {
+    position: relative;
+    width: 100%;
+    height: 146vh;
+}
+
+.Assignments > img:nth-child(1) {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    filter: opacity(200%);
+}
+
+.Assignments > .assignmentTopic {
+    position: absolute;
+    left: 8px;
+    top: 20px;
+    color: white;
+}
+
+.Assignments > .assignmentTopic > h1 > span:nth-child(1) {
+    left: 10px;
+    top: 30px;
+    color: #E67E22;
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Assignments > .assignmentTopic > h1 > span:nth-child(3) {
+    position: absolute;
+    width: max-content;
+    margin-left: 150px;
+    top: 68px;
+    color: white;
+    font-size: 20px;
+}
+
+.Assignments > .assignmentTopic > h1 > span:nth-child(3) > span {
+    position: relative;
+    left: 240px;
+    top: -23px;
+    color: #E67E22;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.box > .card {
+    height: 300px;
+    width: 250px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transition: all 0.1s;
+    transform: scale(1.08);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #E67E22;
+}
+
+h5 {
+    color: #F1C40F;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .buttonReadMore{
+    background-color: #E67E22;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card .buttonReadMore:hover {
+    background-color: transparent;
+    border: 2px solid #E67E22;
+    cursor: pointer;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    top: 485px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.box2 > .card2 {
+    height: 300px;
+    width: 250px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.card2:hover {
+    transition: all 0.1s;
+    transform: scale(1.08);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card2 i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #E67E22;
+}
+
+h5 {
+    color: #F1C40F;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card2 .buttonReadMore {
+    background-color: #E67E22;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card2 .buttonReadMore:hover {
+    background-color: transparent;
+    border: 2px solid #E67E22;
+    cursor: pointer;
+}
+
+.moreAssignmentBtn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: auto;
+    width: max-content;
+}
+
+.moreAssignmentBtn a {
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.moreAssignmentBtn a:hover {
+    background-color: transparent;
+    border: 2px solid yellow;
+    cursor: pointer;
+    color: #fff;
+}
+
+/*-----------------------------Assignment End----------------------------*/
+
+/*----------------------------PortFolio Start----------------------------*/
+
+.PortFolio {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.PortFolio > img:nth-child(1) {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    filter: opacity(200%);
+}
+
+.PortFolio > .portFolioTopic {
+    position: absolute;
+    left: 8px;
+    top: 20px;
+    color: white;
+}
+
+.PortFolio > .portFolioTopic > h1 > span:nth-child(1) {
+    left: 10px;
+    top: 30px;
+    color: #E67E22;
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.PortFolio > .portFolioTopic > h1 > span:nth-child(3) {
+    position: absolute;
+    width: max-content;
+    margin-left: 235px;
+    top: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+.PortFolio > .portFolioTopic > h1 > span:nth-child(3) > span {
+    position: relative;
+    left: 330px;
+    top: -23px;
+    color: #E67E22;
+}
+
+.PortFolio > .image1Container {
+    position: absolute;
+    top: 181px;
+    left: 118px;
+    margin: auto;
+    width: 40px;
+}
+
+.PortFolio > .image1Container > .image1 {
+    position: absolute;
+    width: 405px;
+    height: 362px;
+    object-fit: cover;
+    background-position: center;
+    box-shadow: 0 10px 10px 1px #928c8c;
+}
+
+.PortFolio > .image2Container {
+    position: absolute;
+    top: 152px;
+    left: 650px;
+    margin: auto;
+}
+
+.PortFolio > .image2Container > .image2 {
+    position: absolute;
+    width: 215px;
+    height: 171px;
+    object-fit: cover;
+    box-shadow: 0 10px 10px 1px #928c8c;
+}
+
+.PortFolio > .image3Container {
+    position: absolute;
+    top: 152px;
+    left: 940px;
+    margin: auto;
+}
+
+.PortFolio > .image3Container > .image3 {
+    position: absolute;
+    width: 215px;
+    height: 171px;
+    object-fit: cover;
+    box-shadow: 0 10px 10px 1px #928c8c;
+}
+
+.PortFolio > .image4Container {
+    position: absolute;
+    top: 386px;
+    left: 650px;
+}
+
+.PortFolio > .image4Container > .image4 {
+    position: absolute;
+    width: 215px;
+    height: 171px;
+    object-fit: cover;
+    box-shadow: 0 10px 10px 1px #928c8c;
+}
+
+.PortFolio > .image5Container {
+    position: absolute;
+    top: 386px;
+    left: 940px;
+}
+
+.PortFolio > .image5Container > .image5 {
+    position: absolute;
+    width: 215px;
+    height: 171px;
+    object-fit: cover;
+    box-shadow: 0 10px 10px 1px #928c8c;
+}
+
+/*----------------------------PortFolio End----------------------------*/
+
+/*----------------------------Contact Me Start----------------------------*/
+
+.ContactMe {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.ContactMe > img:nth-child(1) {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    filter: opacity(200%);
+}
+
+.ContactMe > .contactMeTopic {
+    position: absolute;
+    left: 8px;
+    top: 20px;
+    color: white;
+}
+
+.ContactMe > .contactMeTopic > h1 > span:nth-child(1) {
+    left: 10px;
+    top: 30px;
+    color: #E67E22;
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ContactMe > .contactMeTopic > h1 > span:nth-child(3) {
+    position: absolute;
+    width: max-content;
+    margin-left: 285px;
+    top: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+.ContactMe > .contactMeTopic > h1 > span:nth-child(3) > span {
+    position: relative;
+    color: #E67E22;
+}
+
+.ContactMe > h2:nth-child(3) {
+    position: absolute;
+    width: max-content;
+    left: 100px;
+    top: 120px;
+    color: #F1C40F;
+    font-size: 20px;
+}
+
+.formContainer {
+    position: absolute;
+    left: 77px;
+    top: 180px;
+    width: 500px;
+    height: 430px;
+}
+
+.formContainer > .content {
+    position: relative;
+}
+
+.formContainer > .content > .name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 450px;
+    height: 45px;
+    background-color: transparent;
+    border-bottom: 1px solid #F1C40F;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    color: #fff;
+}
+
+.formContainer > .content > .name::placeholder {
+    color: #F1C40F;
+    font-size: 20px;
+}
+
+.formContainer > .content > .name:focus {
+    outline: none;
+}
+
+.formContainer > .content > .email {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60px;
+    margin: auto;
+    width: 450px;
+    height: 45px;
+    background-color: transparent;
+    border-bottom: 1px solid #F1C40F;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    color: #fff;
+}
+
+.formContainer > .content > .email::placeholder {
+    color: #F1C40F;
+    font-size: 20px;
+}
+
+.formContainer > .content > .email:focus {
+    outline: none;
+}
+
+.formContainer > .content > .subject {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 120px;
+    margin: auto;
+    width: 450px;
+    height: 45px;
+    background-color: transparent;
+    border-bottom: 1px solid #F1C40F;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    color: #fff;
+}
+
+.formContainer > .content > .subject::placeholder {
+    color: #F1C40F;
+    font-size: 20px;
+}
+
+.formContainer > .content > .subject:focus {
+    outline: none;
+}
+
+.formContainer > .content > .messageBox {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 180px;
+    margin: auto;
+    width: 450px;
+    background-color: transparent;
+    border-bottom: 1px solid #F1C40F;
+    border-top: 1px solid #F1C40F;
+    border-right: 1px solid #F1C40F;
+    border-left: 1px solid #F1C40F;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.formContainer > .content > .messageBox::placeholder {
+    color: #F1C40F;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+}
+
+.formContainer > .content > .messageBox:focus {
+    outline: none;
+}
+
+.formContainer button {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 384px;
+    margin: auto;
+    width: 450px;
+    height: 35px;
+    background-color: #F1C40F ;
+    border: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.formContainer .sendBtn{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.formContainer .sendBtn span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    height: max-content;
+    font-size: 20px;
+}
+
+.formContainer .sendBtn .fa {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    margin: auto;
+    height: max-content;
+    font-size: 20px;
+}
+
+.formContainer button:hover .sendBtn {
+    top: -38px;
+    transition: all 0.5s;
+}
+
+.contactDetails {
+    position: absolute;
+    width: 500px;
+    height: 80%;
+    right: 80px;
+    top: 90px;
+}
+
+.contactDetails h2 {
+    position: absolute;
+    color: #F1C40F;
+}
+
+.ContactMe .line1 {
+    position: absolute;
+    transform: rotate(90deg);
+    width: 483px;
+    height: 1px;
+    background-color: yellow;
+    border-radius: 10px;
+    content: "";
+    top: 352px;
+    left: 425px;
+}
+
+.ContactMe .wrapper {
+    position: absolute;
+    right: 80px;
+    top: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 150px;
+    flex-wrap: wrap;
+}
+
+.ContactMe .wrapper a .icon {
+    margin: 0 20px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.ContactMe .wrapper a .icon:hover i {
+    color: #fff;
+}
+
+.ContactMe .wrapper a .icon span {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    display: block;
+    background: white;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #E67E22;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ContactMe .wrapper a .icon:hover{
+    color: #fff;
+    border-color: white;
+}
+
+.ContactMe .wrapper a .icon span i {
+    font-size: 20px;
+    line-height: 42px;
+    color: black;
+}
+
+.ContactMe .wrapper a .icon:hover{
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.ContactMe .wrapper a .facebook:hover span{
+    background: #3B5999;
+}
+
+.ContactMe .wrapper a .linkedIn:hover span{
+    background: #003366;
+}
+
+.ContactMe .wrapper a .gitHub:hover span{
+    background: #333;
+}
+
+.ContactMe .wrapper a .instagram:hover span{
+    background: crimson;
+}
+
+.ContactMe .wrapper a .whatsApp:hover span{
+    background: green;
+}
+
+.ContactMe .wrapper a .twitter:hover span{
+    background: dodgerblue;
+}
+
+.ContactMe .line2 {
+    position: absolute;
+    width: 483px;
+    height: 1px;
+    background-color: yellow;
+    border-radius: 10px;
+    content: "";
+    top: 360px;
+    left: 730px;
+}
+
+.ContactMe > .bottomContainerContact {
+    position: absolute;
+    width: 40%;
+    height: 15%;
+    margin-left: 57%;
+    top: 363px;
+    font-size: 22px;
+    z-index: 1;
+}
+
+/* Location, Phone, Email Section */
+.bottomContainerContact > .contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+}
+
+.bottomContainerContact > .contact-list > .list-item {
+    line-height: 3.5;
+    color: #aaa;
+}
+
+.bottomContainerContact > .contact-list > .list-item .contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #fff;
+}
+
+.bottomContainerContact > .contact-list > .list-item > .circle {
+    content: "";
+    width: 45px;
+    height: 45px;
+    background-color: #F1C40F;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    margin-left: -10px;
+    margin-top: 14px;
+}
+
+@keyframes circleOuter {
+    0%{
+        width: 45px;
+        height: 45px;
+    }
+    100%{
+        width: 60px;
+        height: 60px;
+        margin-left: -18px;
+        margin-top: 7px;
+    }
+}
+.bottomContainerContact > .contact-list > .list-item > .circleOuter {
+    content: "";
+    width: 45px;
+    height: 45px;
+    background-color: #d5d6d6;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -2;
+    margin-left: -10px;
+    margin-top: 14px;
+    animation-name: circleOuter;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes emailAnim{
+    0%{
+        transform: translateY(18px);
+    }
+    100%{
+        transform: translateY(-2px);
+    }
+}
+.bottomContainerContact > .contact-list > .list-item > .fa {
+    font-size: 35px;
+    animation-name: emailAnim;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    margin-left: -2px;
+}
+
+.bottomContainerContact > .contact-list > .list-item > .fas {
+    font-size: 30px;
+}
+.bottomContainerContact > .contact-list > .list-item > #phoneFont{
+    animation-name: phoneRing;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes phoneRing{
+    0% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+        transform:rotate(0) scale(1) skew(1deg)
+    }
+
+    10% {
+        -webkit-transform:rotate(-25deg) scale(1) skew(1deg);
+        transform:rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    20% {
+        -webkit-transform:rotate(25deg) scale(1) skew(1deg);
+        transform:rotate(25deg) scale(1) skew(1deg)
+    }
+
+    30% {
+        -webkit-transform:rotate(-25deg) scale(1) skew(1deg);
+        transform:rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    40% {
+        -webkit-transform:rotate(25deg) scale(1) skew(1deg);
+        transform:rotate(25deg) scale(1) skew(1deg)
+    }
+
+    50% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+        transform:rotate(0) scale(1) skew(1deg)
+    }
+
+    100% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+        transform:rotate(0) scale(1) skew(1deg)
+    }
+}
+
+
+.bottomContainerContact > .contact-list > .list-item > .pulse {
+    background: #d6d4d4;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    left: 51.1%;
+    top: 50%;
+    margin: 18px 0px 0px -255px;
+    transform: rotateX(55deg);
+    z-index: -1;
+}
+.bottomContainerContact > .contact-list > .list-item > .pulse:after {
+    content: "";
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin: -13px 0 0 -13px;
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    box-shadow: 0 0 1px 2px #F1C40F;
+    animation-delay: 1.1s;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(0.1, 0.1);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.2, 1.2);
+        opacity: 0;
+    }
+}
+
+.place {
+    margin-left: 35px;
+}
+
+.phone {
+    margin-left: 35px;
+}
+
+.gmail {
+    margin-left: 27px;
+}
+
+.contact-text a {
+    color: #fff;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+    font-weight: 600;
+    color: #F1C40F;
+    text-decoration: none;
+}
+
+/*----------------------------Contact Me End----------------------------*/
+
+/*----------------------------Footer Start----------------------------*/
+
+footer {
+    position: relative;
+    transform: translatey(0);
+    height: 70px;
+    background-color: #E67E22;
+}
+
+footer #footer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+footer > section > p {
+    position: relative;
+    text-align: center;
+    color: black;
+    top: 10px;
+    left: 400px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*---------------------------Footer End----------------------------*/
+
+/*---------------------------Remove Scroll bar---------------------------*/
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*--------------------------------------------------------------------------*/
+
+
+/*----------------------Start Responsive For 320px-------------------------*/
+
+@media all and (max-width: 320px) {
+
+    body > header div:nth-child(1) {
+        height: 35px;
+    }
+
+    body > header > div > nav {
+        display: none;
+    }
+
+    header .mobileNavBar {
+        display: block;
+        position: absolute;
+        width: 33px;
+        height: 33px;
+        color: white;
+        right: 5px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    header .mobileNavBar i {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        width: max-content;
+        height: max-content;
+    }
+
+    body > header div:nth-child(2) {
+        width: 37px;
+        height: 10px;
+        top: -30px;
+    }
+
+    .ml11 {
+        font-weight: 500;
+        font-size: 1em;
+    }
+
+    .ml11 .text-wrapper {
+        position: relative;
+        display: inline-block;
+        padding-top: 0.1em;
+        padding-right: 0.05em;
+        padding-bottom: 0.15em;
+    }
+
+    .ml7 {
+        position: relative;
+        font-weight: 900;
+        font-size: 1.7em;
+        bottom: 0;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .ml7 .text-wrapper {
+        position: relative;
+        display: inline-block;
+        padding-top: 0.2em;
+        padding-right: 0.05em;
+        padding-bottom: 0.1em;
+        overflow: hidden;
+    }
+
+    .ml7 .letter {
+        transform-origin: 0 100%;
+        display: inline-block;
+        line-height: 1em;
+        color: #E67E22;
+        top: 0;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 375px)  {
+
+}
+

@@ -1,0 +1,130 @@
+
+/*-------------------------------------------------------------------------------------------*/
+header{
+    position: relative;
+    height: 100px;
+    border-bottom: 4px solid black;
+    box-shadow: -2px 6px 9px -4px black;
+}
+
+header>img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 250px;
+}
+header>ul>li{
+    display: inline-block;
+    padding: 0 10px 0 10px;
+}
+
+header>ul>li:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+header>ul{
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+    font-size: 24px;
+    list-style: none;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+/*main>section:nth-child(1){
+    position: absolute;
+    background-color:rebeccapurple;
+    width: 50px;
+    height: 300px;
+    top: 0;
+    right: 0;
+}*/
+
+body>main>nav{
+    position: absolute;
+    background-color: rebeccapurple;
+    top: 108px;
+    bottom:0;
+    width: 20vw;
+    height: 100vh;
+
+}
+body>main>nav>ul{
+    /*  position: relative;*/
+    /*  top: 0;*/
+    /* bottom: 0;*/
+    font-size: 24px;
+    color: white;
+    list-style: none;
+}
+
+body>main>nav>ul>li{
+    display: block;
+    padding: 10px;
+}
+body>main>nav>ul>li:hover {
+    cursor: pointer;
+}
+/*----------------------------------------------------------------------------------------------*/
+
+
+body>main>section{
+    position: absolute;
+    right:15px;
+}
+
+
+
+body>main>section>img:nth-child(1){
+    position: relative;
+    width: 25vw;
+    border: 1px solid black;
+    box-shadow: -2px 6px 9px -4px black;
+}
+body>main>section>img:nth-child(2){
+    position: relative;
+    width: 25vw;
+    border: 1px solid black;
+    box-shadow: -2px 6px 9px -4px black;
+
+}
+body>main>section>img:nth-child(3){
+    position: relative;
+    width: 25vw;
+    border: 1px solid black;
+    box-shadow: -2px 6px 9px -4px black;
+
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+body>main>section>section{
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    right: 8px;
+}
+
+body>main>section>section{
+    padding-top: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+}
+
+body>main>section>section>p{
+    padding-bottom: 15px;
+}
+
+body>footer{
+    background-color: thistle;
+    text-align: center;
+    bottom: -150px;
+    width: 98vw;
+    height: 10vh;
+    position: absolute;
+}
+
+
+

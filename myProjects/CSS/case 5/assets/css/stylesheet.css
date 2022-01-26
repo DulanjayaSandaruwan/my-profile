@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body > header{
+    position: relative;
+    height: 50px;
+    background-color: lavender;box-shadow: -2px 6px 9px -4px #917a7a;
+}
+body > header > div:nth-child(1){
+    position: absolute;
+    background-image: url(../images/ijselogo.png);
+    background-size: contain;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 30px;
+    width: 160px;
+    height: 30px;
+}
+
+body > header > nav > ul {
+    position: absolute;
+    right: 30px;
+    font-size: 18px;
+    font-family: 'Lobster', cursive;
+    list-style: none;
+    color: #4a3a3a;margin: 10px 0px;
+}
+
+body > header > nav > ul > li {
+    position: relative;
+    margin: 3px;
+    padding: 0 25px 0 10px;
+    display: inline-block;
+}
+
+
+body > main{
+    position: relative;
+}
+body > main > nav{
+    position: absolute;
+    background-color: #4d1da7;
+    width: 180px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    color: white;
+}
+body > main > nav > ul{
+    list-style: none;
+    margin-top: 50px;
+    margin-left: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+body > main > nav > ul > li{
+    margin-top: 10px;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: -10px;
+}
+
+body > main > nav > ul > li > a{
+   text-decoration: none;
+   color: white;
+   padding-left: 10px;
+}
+body > main > nav > ul > li > .fas{
+    color: white;
+    font-size: 20px;
+ }
+
+body > main > section{
+    margin-left: 180px;
+    padding: 10px;
+}
+body > main > section > div:nth-child(1){
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+}
+body > main > section > div:nth-child(1) > div:nth-child(1){
+    width: calc(100%/3);
+    background-image: url("../images/5973466.png");
+    background-size: cover;
+}
+body > main > section > div:nth-child(1) > div:nth-child(2){
+    width: calc(100%/3);
+    background-image: url("../images/javascript.jpg");
+    background-size: cover;
+}
+body > main > section > div:nth-child(1) > div:nth-child(3){
+    width: calc(100%/3);
+    background-image: url("../images/html.jpg");
+    background-size: cover;
+}
+
+body > footer{
+    position: relative;
+    margin-top: -17px;
+    width: 100%;
+    height: 30px;
+    background-color: #585151;
+    color: white;
+}
+body > footer > p{
+    text-align: right;
+    margin-right: 20px;
+    padding-top: 5px;
+}
+
+@media all and (max-width:320px){
+    body > header{
+        height: 40px;
+    }
+    body > header > div:nth-child(1){
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 132px;
+        height: 25px;
+        background-size: cover;
+    }
+    body > header > nav > ul{
+        display: none;
+    }
+
+    body > main > nav{
+        width: 100px;
+    }
+
+    body > main > nav > ul{
+        display: flex;
+        flex-direction: column;
+    }
+    body > main > nav > ul > li{
+        margin-top: 10px;
+        font-size: 12px;
+        margin-left: -30px;
+        padding-top: 7px;
+    }
+    body > main > nav > ul > li > a{
+        margin-left: -10px;
+        padding-left: 17px;
+    }
+    body > main > nav > ul > li > .fas{
+        font-size: 12px;
+    }
+    body > main > section{
+        margin-left: 100px;
+        padding: 10px;
+    }
+    body > main > section > div:nth-child(1){
+        flex-direction: column;
+        width: 100%;
+        height: 350px;
+    }
+    body > main > section > div:nth-child(1) > div:nth-child(1){
+        width: 100%;
+        height: 100%;
+    }
+    body > main > section > div:nth-child(1) > div:nth-child(2){
+        width: 100%;
+        height: 100%;
+    }
+    body > main > section > div:nth-child(1) > div:nth-child(3){
+        width: 100%;
+        height: 100%;
+    }
+    body > main > section > p{
+        font-size: 12px;
+    }
+    body > footer{
+        height: 20px;
+    }
+    body > footer > p{
+        font-size: 10px;
+        margin-right: 20px;
+        padding-top: 5px;
+    }
+}
+
+
+@media all and (min-width:321px) and (max-width:375px){
+    body > header{
+        height: 40px;
+    }
+    body > header > div:nth-child(1){
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 132px;
+        height: 25px;
+        background-size: cover;
+    }
+    body > header > nav > ul{
+        display: none;
+    }
+
+    body > main > nav{
+        width: 100px;
+    }
+
+    body > main > nav > ul{
+        display: flex;
+        flex-direction: column;
+    }
+    body > main > nav > ul > li{
+        margin-top: 10px;
+        font-size: 12px;
+        margin-left: -30px;
+        padding-top: 7px;
+    }
+    body > main > nav > ul > li > a{
+        margin-left: -10px;
+        padding-left: 17px;
+    }
+    body > main > nav > ul > li > .fas{
+        font-size: 12px;
+    }
+    body > main > section{
+        margin-left: 100px;
+        padding: 10px;
+    }
+    body > main > section > div:nth-child(1){
+        flex-direction: column;
+        width: 100%;
+        height: 350px;
+    }
+    body > main > section > div:nth-child(1) > div:nth-child(1){
+        width: 100%;
+        height: 100%;
+    }
+    body > main > section > div:nth-child(1) > div:nth-child(2){
+        width: 100%;
+        height: 100%;
+    }
+    body > main > section > div:nth-child(1) > div:nth-child(3){
+        width: 100%;
+        height: 100%;
+    }
+    body > main > section > p{
+        font-size: 12px;
+    }
+    body > footer{
+        height: 20px;
+    }
+    body > footer > p{
+        font-size: 10px;
+        margin-right: 20px;
+        padding-top: 5px;
+    }
+
+}
+@media all and (min-width:376px) and (max-width:425px){
+    body > header{
+        height: 40px;
+    }
+    body > header > div:nth-child(1){
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 132px;
+        height: 25px;
+        background-size: cover;
+    }
+    body > header > nav > ul{
+        display: none;
+    }
+
+    body > main > nav{
+        width: 100px;
+    }
+
+    body > main > nav > ul{
+        display: flex;
+        flex-direction: column;
+    }
+    body > main > nav > ul > li{
+        margin-top: 10px;
+        font-size: 13px;
+        margin-left: -33px;
+        padding-top: 7px;
+    }
+    body > main > nav > ul > li > a{
+        margin-left: -10px;
+        padding-left: 17px;
+    }
+    body > main > nav > ul > li > .fas{
+        font-size: 15px;
+    }
+    body > main > section{
+        margin-left: 100px;
+        padding: 10px;
+    }
+    body > main > section > div:nth-child(1){
+        flex-direction: column;
+        width: 100%;
+        height: 350px;
+    }
+    body > main > section > div:nth-child(1) > div:nth-child(1){
+        width: 100%;
+        height: 100%;
+    }
+    body > main > section > div:nth-child(1) > div:nth-child(2){
+        width: 100%;
+        height: 100%;
+    }
+    body > main > section > div:nth-child(1) > div:nth-child(3){
+        width: 100%;
+        height: 100%;
+    }
+    body > main > section > p{
+        font-size: 12px;
+    }
+    body > footer{
+        height: 20px;
+    }
+    body > footer > p{
+        font-size: 10px;
+        margin-right: 20px;
+        padding-top: 5px;
+    }
+}
+@media all and (min-width:426px) and (max-width:768px){
+    body > header{
+        height: 40px;
+    }
+    body > header > div:nth-child(1){
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 132px;
+        height: 25px;
+        background-size: cover;
+    }
+    body > header > nav > ul{
+        display: none;
+    }
+
+    body > main > nav{
+        width: 170px;
+    }
+
+    body > main > nav > ul{
+        display: flex;
+        flex-direction: column;
+    }
+    body > main > nav > ul > li{
+        margin-top: 10px;
+        font-size: 18px;
+        margin-left: -10px;
+        padding-top: 13px;
+    }
+    body > main > nav > ul > li > a{
+        margin-left: -10px;
+        padding-left: 17px;
+    }
+    body > main > nav > ul > li > .fas{
+        font-size: 18px;
+    }
+    body > main > section{
+        margin-left: 170px;
+        padding: 10px;
+    }
+    body > main > section > div:nth-child(1){
+        flex-direction: column;
+        width: 100%;
+        height: 800px;
+    }
+    body > main > section > div:nth-child(1) > div:nth-child(1){
+        width: 100%;
+        height: 100%;
+    }
+    body > main > section > div:nth-child(1) > div:nth-child(2){
+        width: 100%;
+        height: 100%;
+    }
+    body > main > section > div:nth-child(1) > div:nth-child(3){
+        width: 100%;
+        height: 100%;
+    }
+    body > main > section > p{
+        font-size: 17px;
+    }
+    body > footer{
+        height: 30px;
+    }
+    body > footer > p{
+        font-size: 13px;
+        margin-right: 20px;
+        padding-top: 8px;
+    }
+}
+@media all and (min-width:769px) and (max-width:1024px){
+    body > header{
+        height: 40px;
+    }
+    body > header > nav > ul{
+        right: 0px;
+    }
+    body > header > nav > ul > li{
+        padding-right: 30px;
+        font-size: 15px;
+    }
+    body > header > div:nth-child(1){
+        width: 115px;
+        height: 18px;
+        background-size: cover;
+        margin-left: -25px;
+    }
+    body > main > nav{
+        width: 120px;
+    }
+
+    body > main > nav > ul{
+        display: flex;
+        flex-direction: column;
+    }
+    body > main > nav > ul > li{
+        margin-top: 10px;
+        font-size: 16px;
+        margin-left: -28px;
+        padding-top: 7px;
+    }
+    body > main > nav > ul > li > a{
+        margin-left: -10px;
+        padding-left: 17px;
+    }
+    body > main > nav > ul > li > .fas{
+        font-size: 16px;
+    }
+    body > main > section{
+        margin-left: 120px;
+        padding: 10px;
+    }
+    body > main > section > div:nth-child(1){
+        flex-direction: row;
+        width: 100%;
+        height: 150px;
+    }
+    body > main > section > div:nth-child(1) > div:nth-child(1){
+        width: 100%;
+        height: 100%;
+    }
+    body > main > section > div:nth-child(1) > div:nth-child(2){
+        width: 100%;
+        height: 100%;
+    }
+    body > main > section > div:nth-child(1) > div:nth-child(3){
+        width: 100%;
+        height: 100%;
+    }
+    body > main > section > p{
+        font-size: 12px;
+    }
+    body > footer{
+        height: 20px;
+    }
+    body > footer > p{
+        font-size: 10px;
+        margin-right: 20px;
+        padding-top: 3px;
+    }
+}
+
+@media all and (min-width:1441px) and (max-width:2560px){
+    body > header{
+        height: 50px;
+    }
+    body > header > nav > ul > li{
+        font-size: 20px;
+        padding-right: 25px;
+    }
+
+    body > header > div:nth-child(1){
+        margin-left: -25px;
+        width: 200px;
+        height: 36px;
+    }
+
+    body > main > nav{
+        width: 150px;
+    }
+
+    body > main > nav > ul{
+        display: flex;
+        flex-direction: column;
+    }
+    body > main > nav > ul > li{
+        position: relative;
+        left: -50px;
+        padding-top: 7px;
+    }
+    body > main > nav > ul > li > a{
+        margin-left: -10px;
+        padding-left: 17px;font-size: 40px;
+    }
+    body > main > nav > ul > li > .fas{
+        font-size: 40px;
+    }
+    body > main > section{
+        margin-left: 150px;
+        padding: 10px;
+    }
+    body > main > section > div:nth-child(1){
+        flex-direction: row;
+        width: 100%;
+        height: 250px;
+    }
+    body > main > section > p{
+        font-size: 18px;
+    }
+    body > footer{
+        height: 40px;
+    }
+    body > footer > p{
+        margin-top: 16px;
+        font-size: 20px;
+        margin-right: 20px;
+        padding-top: 8px;
+    }
+}
+@media all and (min-width:2560px){ 
+    body > header{
+        height: 80px;
+    }
+    body > header > nav > ul{
+        height: 80px;
+    }
+    body > header > nav > ul > li{
+        font-size: 33px;
+        padding-right: 25px;
+        margin-top: 10px;
+    }
+
+    body > header > div:nth-child(1){
+        margin-left: -25px;
+        width: 340px;
+        height: 60px;
+    }
+
+    body > main > nav{
+        width: 320px;
+    }
+
+    body > main > nav > ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    body > main > nav > ul > li{
+        margin-top: 10px;
+        font-size: 33px;
+        margin-left: 65px;
+        padding-top: 35px;
+    }
+    body > main > section{
+        margin-left: 320px;
+        padding: 10px;
+    }
+    body > main > section > div:nth-child(1){
+        flex-direction: row;
+        width: 100%;
+        height: 380px;
+    }
+    body > main > section > p{
+        font-size: 32px;
+    }
+    body > footer{
+        height: 60px;
+    }
+    body > footer > p{
+        margin-top: 16px;
+        font-size: 30px;
+        margin-right: 40px;
+        padding-top: 8px;
+    }
+}

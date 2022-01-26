@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&display=swap');
+
+html, body {
+    font-family: 'Poppins', serif;
+}
+
+body > header > .navbar-light .navbar-brand {
+    font-family: 'Pacifico', serif;
+}
+
+body > header > nav{
+    background-color: #29293F !important;
+    box-shadow: 0 1px 10px 1px;
+}
+
+body > header > nav ul > li{
+    width: 102px;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+body > header > nav ul > li a{
+    position: relative;
+    width: 100%;
+    height: 25px;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+
+body > header > nav ul > li a span{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: max-content;
+    width: max-content;
+}
+
+body > header > nav ul > li:hover a{
+    background-color: rgb(143, 141, 141);
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+
+body > main > section{
+    width: 100%;
+    height: 92.5vh;
+    background-color: rgb(233, 233, 233) !important;
+}
+
+body > main > section > div:nth-child(1){
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 99%;
+    height: 96%;
+    background-color: #29293F !important;
+    border-radius: 15px;
+}
+
+
+body > header > nav > .container-fluid > .container-fluid > div:nth-child(1):hover i {
+    color: red;
+}
+
+body > header > nav > .container-fluid > .container-fluid > div:nth-child(2):hover i { 
+    color: green;
+}
