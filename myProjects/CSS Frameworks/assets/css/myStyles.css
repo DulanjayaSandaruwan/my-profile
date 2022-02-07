@@ -68,7 +68,7 @@ body > header > nav > .container-fluid > .container-fluid > div:nth-child(1):hov
     color: red;
 }
 
-body > header > nav > .container-fluid > .container-fluid > div:nth-child(2):hover i { 
+body > header > nav > .container-fluid > .container-fluid > div:nth-child(2):hover i {
     color: green;
 }
 
@@ -85,7 +85,7 @@ body > header > nav > .container-fluid > .container-fluid > div:nth-child(2):hov
     font-size: 4em;
     text-align: center;
     display: block;
-    padding-top: 35px;
+    padding-top: 20px;
 }
 
 .myCard>h1{
@@ -93,7 +93,7 @@ body > header > nav > .container-fluid > .container-fluid > div:nth-child(2):hov
     font-size: 2em;
     text-align: center;
     font-family: Ubuntu;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .myCard>h2{
@@ -101,5 +101,5 @@ body > header > nav > .container-fluid > .container-fluid > div:nth-child(2):hov
     font-size: 3em;
     text-align: center;
     font-family: Ubuntu;
-    padding-top: 2px;
+    padding-top: 5px;
 }
