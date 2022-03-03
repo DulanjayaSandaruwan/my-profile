@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <title>Food Hut</title>
+    <link href="asserts/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="asserts/css/style.css" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="wrp">
+    <nav class="navbar-nav">
+        <div class="logo">
+            <img alt="logo" class="icon" src="asserts/icons/icons8-shop-64.png">
+            <h1 class="header-title">Food <span>Hut</span></h1>
+        </div>
+        <nav class="side-nav">
+            <button id="btn-manage-items" onclick="showManageItemForm()">
+                <i class="fas fa-hamburger"></i>
+                <a href="#">Manage Items</a>
+            </button>
+            <button id="btn-manage-orders" onclick="showManageOrderForm()">
+                <i class="fas fa-cart-arrow-down"></i>
+                <a href="#">Manage Orders</a>
+            </button>
+            <button id="btn-manage-customers" onclick="showManageCustomerForm()">
+                <i class="fas fa-user"></i>
+                <a href="#">Manage Customers</a>
+            </button>
+            <button id="btn-new-order" onclick="showPlaceOrderForm()">
+                <i class="fas fa-plus"></i>
+                <a href="#">New Order</a>
+            </button>
+            <button id="btn-settings">
+                <i class="fas fa-cog"></i>
+                <a href="#">Settings</a>
+            </button>
+            <button id="btn-about">
+                <i class="fas fa-info-circle"></i>
+                <a href="#">About</a>
+            </button>
+        </nav>
+        <ul class="menu-list">
+            <li id="list-manage-items" onclick="showManageItemForm()"><a href="#"><i class="fas fa-hamburger"></i></a>
+            </li>
+            <li id="list-manage-orders" onclick="showManageOrderForm()"><a href="#"><i
+                    class="fas fa-cart-arrow-down"></i></a></li>
+            <li id="list-manage-customers" onclick="showManageCustomerForm()"><a href="#"><i
+                    class="fas fa-user"></i></a></li>
+            <li id="list-new-order" onclick="showPlaceOrderForm()"><a href="#"><i class="fas fa-plus"></i></a></li>
+            <li id="list-settings"><a href="#"><i class="fas fa-cog"></i></a></li>
+            <li id="list-about"><a href="#"><i class="fas fa-info-circle"></i></a></li>
+        </ul>
+    </nav>
+</div>
+<div class="content container-fluid" id="placeOrderForm">
+    <div class="row">
+        <section class="title col-md-6 col-sm-6">
+            <h1>Place Order</h1>
+            <img alt="" src="asserts/icons/icon%20-%20hamburger.png">
+        </section>
+        <section class="order-id col-md-6 col-sm-6">
+            <div>
+                <h3>New Order</h3>
+                <h3 id="order-id">O-001</h3>
+            </div>
+        </section>
+        <section class="select-customer col-md-6 col-sm-6 col-sm">
+            <form action="#">
+                <label for="cmbCustomers">Select a Customer:</label>
+                <select id="cmbCustomers" name="customers">
+                    <option value="select">Customer ID</option>
+                </select>
+            </form>
+            <div>
+                <label class="lblName" for="txtName">Name</label>
+                <input id="txtName" readonly type="text">
+                <label class="lblAddress" for="txtAddress">Address</label>
+                <input id="txtAddress" readonly type="text">
+                <label class="lblContact" for="txtContact">Contact</label>
+                <input id="txtContact" readonly type="text">
+            </div>
+        </section>
+        <section class="item-table col-md-6 col-sm-6">
+            <h3 class="title">Items</h3>
+            <div class="tbl">
+                <table class="table table-hover" id="tblItems">
+                    <thead>
+                    <tr>
+                        <th scope="col">Code</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">QTY</th>
+                        <th scope="col">Unite-Price</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tblItems-tbody">
+                    </tbody>
+                </table>
+            </div>
+            <div class="footer">
+                <label for="txtQTY">QTY</label>
+                <input id="txtQTY" type="text">
+                <button id="btnAdd">Add</button>
+            </div>
+        </section>
+        <section class="cart-table col-md-12 col-sm-12">
+            <h3 class="title">Cart</h3>
+            <div class="tbl">
+                <table class="table table-hover" id="tblCart">
+                    <thead>
+                    <tr>
+                        <th scope="col">Code</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">QTY</th>
+                        <th scope="col">Tot-Amount</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tblCart-body">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="total col-md-6 col-sm-6">
+            <label for="txtDiscount">Discount</label>
+            <input id="txtDiscount" type="text">
+            <label for="txtTotal">Total</label>
+            <input id="txtTotal" readonly type="text">
+        </section>
+        <section class="place-order-button col-md-6 col-sm-6">
+            <div>
+                <button id="btnRemove">Remove</button>
+                <button id="btnClear">Clear</button>
+                <button id="btnPlaceOrder">Place Order</button>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="manage-items container-fluid" id="manageItemForm">
+    <div class="row">
+        <section class="title col-md-6 col-sm-6">
+            <h1>Manage Items</h1>
+            <img alt="icon" src="asserts/icons/icon%20-%20sun.gif">
+        </section>
+        <section class="item-code col-md-6 col-sm-6">
+            <div>
+                <h3>New Item</h3>
+                <h3 id="item-code">I-001</h3>
+            </div>
+        </section>
+        <section class="item-table col-md-6 col-sm-6">
+            <h3 class="title">Items</h3>
+            <div class="tbl">
+                <table class="table table-hover" id="tblItems-manage-items">
+                    <thead>
+                    <tr>
+                        <th scope="col">Code</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">QTY</th>
+                        <th scope="col">Unite-Price</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="item-details col-md-6 col-sm-6 col-sm">
+            <section>
+                <label for="txtSearchItem">Search : </label>
+                <input id="txtSearchItem" placeholder="Item Code" type="text">
+            </section>
+            <div class="details">
+                <label class="lblDescription" for="txtDescription">Description</label>
+                <input id="txtDescription" type="text">
+                <span id="description-alert"></span>
+                <label class="lblQTY" for="txtItemQTY">QTY</label>
+                <input id="txtItemQTY" type="text">
+                <span id="qty-alert"></span>
+                <label class="lblUnitPrice" for="txtUnitPrice">U.Price</label>
+                <input id="txtUnitPrice" type="text">
+                <span id="unitPrice-alert"></span>
+            </div>
+            <div class="buttons">
+                <button id="btnAddItem">Add</button>
+                <button id="btnUpdateItem">Update</button>
+                <button id="btnRemoveItem">Remove</button>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="manage-customers container-fluid" id="manageCustomerForm">
+    <div class="row">
+        <section class="title col-md-6 col-sm-6">
+            <h1>Manage Customers</h1>
+            <img alt="icon" src="asserts/icons/icon%20-%20man.png">
+        </section>
+        <section class="customer-id col-md-6 col-sm-6">
+            <div>
+                <h3>New Customer</h3>
+                <h3 id="customer-id">C-001</h3>
+            </div>
+        </section>
+        <section class="customer-table col-md-6 col-sm-6">
+            <h3 class="title">Customers</h3>
+            <div class="tbl">
+                <table class="table table-hover" id="tblCustomers">
+                    <thead>
+                    <tr>
+                        <th scope="col">Cid</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Contact</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="customer-details col-md-6 col-sm-6 col-sm">
+            <section>
+                <label for="txtSearchCustomer">Search : </label>
+                <input id="txtSearchCustomer" placeholder="CID" type="text">
+            </section>
+            <div class="details">
+                <label class="lblName" for="txtCustomerName">Name</label>
+                <input id="txtCustomerName" name="name" type="text">
+                <span id="name-alert"></span>
+                <label class="lblAddress" for="txtCustomerAddress">Address</label>
+                <input id="txtCustomerAddress" name="address" type="text">
+                <span id="address-alert"></span>
+                <label class="lblContact" for="txtCustomerContact">Contact</label>
+                <input id="txtCustomerContact" name="contact" type="text">
+                <span id="contact-alert"></span>
+            </div>
+            <div class="buttons">
+                <button id="btnAddCustomer">Add</button>
+                <button id="btnUpdateCustomer">Update</button>
+                <button id="btnRemoveCustomer">Remove</button>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="manage-orders container-fluid" id="manageOrderForm">
+    <div class="row">
+        <section class="title col-md-12 col-sm-12">
+            <h1>Manage Orders</h1>
+            <img alt="icon" src="asserts/icons/icon%20-%20box.gif">
+        </section>
+        <section class="col-md-12 col-sm-12">
+            <div class="order-id">
+                <form action="#">
+                    <label for="cmbOrderId">Select Order ID:</label>
+                    <select id="cmbOrderId" name="id">
+                        <option value="select">Select</option>
+                    </select>
+                </form>
+            </div>
+            <div class="customer-id">
+                <form action="#">
+                    <label for="cmbCustomerId-ManageOrders">Select Customer ID:</label>
+                    <select id="cmbCustomerId-ManageOrders" name="id">
+                        <option value="select">Customer ID</option>
+                    </select>
+                </form>
+            </div>
+        </section>
+        <section class="order-table col-md-12 col-sm-12">
+            <h3 class="title">Orders</h3>
+            <div class="tbl">
+                <table class="table table-hover" id="tblOrders">
+                    <thead>
+                    <tr>
+                        <th scope="col">Code</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">QTY</th>
+                        <th scope="col">Tot-Amount</th>
+                        <th scope="col">Date</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="total col-md-12 col-sm-12">
+            <label for="txtDiscount2">Discount</label>
+            <input id="txtDiscount2" readonly type="text">
+            <label for="txtTotal2">Total</label>
+            <input id="txtTotal2" readonly type="text">
+        </section>
+    </div>
+</div>
+
+<script src="asserts/bootstrap/js/bootstrap.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="db/DB.js"></script>
+<script src="controller/CustomerController.js"></script>
+<script src="controller/ItemController.js"></script>
+<script src="controller/PlaceOrderController.js"></script>
+<script src="controller/OrderController.js"></script>
+<script src="model/Customer.js"></script>
+<script src="model/Items.js"></script>
+<script src="model/Order.js"></script>
+<script src="model/OrderDetails.js"></script>
+<script src="asserts/script/script.js"></script>
+</body>
+</html>
