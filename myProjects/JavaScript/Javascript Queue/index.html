@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Queue</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <style>
+        body>main>div:nth-child(1) {
+            position: absolute;
+            content: "";
+            width: 50%;
+            height: 0.5%;
+            background-color: white;
+            left: 0;
+            right: 0;
+            top: 40%;
+            margin: auto;
+        }
+
+        body>main>div:nth-child(2) {
+            position: absolute;
+            content: "";
+            width: 50%;
+            height: 0.5%;
+            background-color: white;
+            left: 0;
+            right: 0;
+            top: 60%;
+            margin: auto;
+        }
+
+        body>main>#firstDiv {
+            width: calc(9.7%);
+            height: 10%;
+            position: absolute;
+            border: 1px solid white;
+            left: -35.9%;
+            right: 0;
+            top: 25%;
+            margin: auto;
+        }
+
+        body>main>#sixthDiv {
+            width: calc(9.7%);
+            height: 10%;
+            position: absolute;
+            border: 1px solid white;
+            left: 36.7%;
+            right: 0;
+            top: 65%;
+            margin: auto;
+        }
+
+        body>main>.container {
+            position: absolute;
+            width: 50%;
+            height: 10%;
+            top: 45%;
+            left: -2%;
+            right: 0;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+        body>main>.container>div {
+            position: relative;
+            width: calc(100%/4);
+            margin-left: 5%;
+            border: 1px solid white;
+        }
+
+        body>main>.btnContainer {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: -70%;
+            margin: auto;
+            height: max-content;
+        }
+    </style>
+</head>
+
+<body>
+    <main style="background-color: black;position: relative;width: 100%;height: 100vh;">
+        <div></div>
+        <div></div>
+        <div id="firstDiv"></div>
+        <div class="container">
+            <div id="secondDiv"></div>
+            <div id="thirdDiv"></div>
+            <div id="fourthDiv"></div>
+            <div id="fifthDiv"></div>
+        </div>
+        <div id="sixthDiv"></div>
+        <div class="btnContainer row w-25 position-absolute">
+            <div class="col">
+                <button class="btn-success w-100 border-0 start-0" id="clickMe">Start</button>
+            </div>
+            <div class="col">
+                <button class="btn-danger w-100 border-0 end-0" id="StopMe">Stop</button>
+            </div>
+        </div>
+    </main>
+    <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        var firstDiv = $('#firstDiv');
+        var secondDiv = $('#secondDiv');
+        var thirdDiv = $('#thirdDiv');
+        var fourthDiv = $('#fourthDiv');
+        var fifthDiv = $('#fifthDiv');
+        var sixthDiv = $('#sixthDiv');
+        var clickMe = $('#clickMe');
+        var stopMe = $('#StopMe');
+        var timerId;
+        var arr = [firstDiv, secondDiv, thirdDiv, fourthDiv, fifthDiv, sixthDiv];
+
+        clickMe.click(function () {
+            clearInterval(timerId);
+            timerId = setInterval(setColors, 1000);
+
+            stopMe.click(function () {
+                clearInterval(timerId);
+            })
+        });
+
+        var j = 0;
+        function setColors() {
+            if (j == 0) {
+                arr[0].css("backgroundColor", "red");
+                arr[1].css("backgroundColor", "green");
+                arr[2].css("backgroundColor", "blue");
+                arr[3].css("backgroundColor", "yellow");
+                arr[4].css("backgroundColor", "violet");
+                arr[5].css("backgroundColor", "purple");
+                console.log("first");
+                console.log("J == " + j);
+                j++;
+                return;
+            }
+            else if (j == 1) {
+                arr[0].css("backgroundColor", "purple");
+                arr[1].css("backgroundColor", "red");
+                arr[2].css("backgroundColor", "green");
+                arr[3].css("backgroundColor", "blue");
+                arr[4].css("backgroundColor", "yellow");
+                arr[5].css("backgroundColor", "violet");
+                console.log('second');
+                console.log("J == " + j);
+                j++;
+                return;
+            } else if (j == 2) {
+                arr[0].css("backgroundColor", "violet");
+                arr[1].css("backgroundColor", "purple");
+                arr[2].css("backgroundColor", "red");
+                arr[3].css("backgroundColor", "green");
+                arr[4].css("backgroundColor", "blue");
+                arr[5].css("backgroundColor", "yellow");
+                console.log('third')
+                console.log("J == " + j);
+                j++;
+                return;
+            } else if (j == 3) {
+                arr[0].css("backgroundColor", "yellow");
+                arr[1].css("backgroundColor", "violet");
+                arr[2].css("backgroundColor", "purple");
+                arr[3].css("backgroundColor", "red");
+                arr[4].css("backgroundColor", "green");
+                arr[5].css("backgroundColor", "blue");
+                console.log('Fourth')
+                console.log("J == " + j);
+                j++;
+                return;
+            } else if (j == 4) {
+                arr[0].css("backgroundColor", "blue");
+                arr[1].css("backgroundColor", "yellow");
+                arr[2].css("backgroundColor", "violet");
+                arr[3].css("backgroundColor", "purple");
+                arr[4].css("backgroundColor", "red");
+                arr[5].css("backgroundColor", "green");
+                console.log('Fifth')
+                console.log("J == " + j);
+                j++;
+                return;
+            } else if (j == 5) {
+                arr[0].css("backgroundColor", "green");
+                arr[1].css("backgroundColor", "blue");
+                arr[2].css("backgroundColor", "yellow");
+                arr[3].css("backgroundColor", "violet");
+                arr[4].css("backgroundColor", "purple");
+                arr[5].css("backgroundColor", "red");
+                console.log('sixth')
+                console.log("J == " + j);
+                j = 0;
+                return;
+            }
+        }
+    </script>
+</body>
+
+</html>
